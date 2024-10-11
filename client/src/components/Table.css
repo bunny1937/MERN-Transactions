@@ -1,0 +1,161 @@
+/* Pagination layout */
+
+.Table-box {
+  padding: 0.5rem 8rem;
+}
+.custom-pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+table {
+  width: 100%;
+
+  border-collapse: collapse; /* Ensures that borders don't have extra spacing */
+}
+
+th,
+td {
+  border: 2px solid #d9a24a; /* Gold-like border between cells */
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #f6e08e; /* Light yellow background for headers */
+  color: #424242; /* Dark text color */
+}
+
+td {
+  background-color: #fff; /* White background for table data cells */
+  color: #424242; /* Dark text color */
+  text-align: center;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9; /* Slightly gray background for alternate rows */
+}
+
+.left-page {
+  margin-left: 20px;
+}
+
+.middle-buttons {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.right-info {
+  margin-right: 20px;
+}
+
+/* Existing pagination styles */
+.pagination {
+  display: inline-block;
+}
+
+.pagination li {
+  display: inline;
+  margin: 0 5px;
+}
+
+.pagination a {
+  text-decoration: none;
+  padding: 8px 12px;
+  border: 2px solid #d9a24a;
+  color: #000000;
+}
+.pagination .active a {
+  background-color: #007bff;
+  color: white;
+}
+.hide-page-numbers {
+  display: none;
+}
+.hidden {
+  display: none !important;
+}
+.highlight {
+  background-color: yellow; /* Highlight color */
+  font-weight: bold;
+}
+.filter-elements {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.search-month-container {
+  display: flex;
+  gap: 20px; /* Add space between the elements */
+  align-items: center;
+}
+.search-button::placeholder {
+  font-size: 0.7rem;
+}
+.search-button {
+  background-color: #f6e08e; /* Light yellow background */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 16px;
+  color: #000000; /* Dark text color */
+  font-weight: bold;
+}
+
+.month-dropdown {
+  background-color: #d9a24a; /* Gold-like background */
+  border: none;
+  padding: 10px 15px;
+  border-radius: 15px;
+  font-size: 16px;
+  color: #000000; /* Dark text color */
+  cursor: pointer;
+}
+
+.month-dropdown option {
+  background-color: #ffffff; /* Dropdown options background */
+  color: #000000; /* Option text color */
+}
+
+.statistics-container {
+  margin-bottom: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.statistics-container h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.selected-month {
+  font-size: 14px;
+  color: #555;
+  margin-left: 5px;
+}
+
+.stat-box {
+  background-color: #ffe9a9;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 300px;
+}
+
+.stat-item h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #000;
+}
+
+.stat-item p {
+  margin-top: 5px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
